@@ -1,0 +1,74 @@
+.employee-container {
+  padding: 2rem;
+
+  h2 {
+    color: #333;
+    margin-bottom: 2rem;
+  }
+}
+
+.employee-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 2rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.employee-info, .employee-stats {
+  h3 {
+    color: #444;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.info-grid {
+  display: grid;
+  gap: 1rem;
+
+  .info-item {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+
+    label {
+      font-weight: bold;
+      color: #666;
+    }
+
+    span {
+      color: #333;
+    }
+  }
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+
+  .stat-item {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: center;
+
+    .stat-label {
+      display: block;
+      color: #666;
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-value {
+      display: block;
+      color: #333;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  }
+}
